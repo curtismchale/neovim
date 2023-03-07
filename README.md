@@ -23,3 +23,5 @@ sudo dnf install ripgrep
 dnf install fd-find
 ```
 
+To ignore files/folders/patterns use the `.ignore` file as defined in the `ripgrep` documentation.
+
