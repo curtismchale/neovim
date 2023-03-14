@@ -42,5 +42,5 @@ pip3 install pynvim
 ???
 ```
 
-This also requires you to be using node 14.14.
-- I currently have this but don't want to run `nvm use 14.14` before I open my code editor every time so I need to figure out how to make that just choose `14.14` every time I invoke `nvim` from terminal.
+This also requires you to be using node 14.14. If you use `nvm` to install 14 with `nvm use 14` then the `coc.lua` file automatically links to `14.21.3` on macOS installs
+
