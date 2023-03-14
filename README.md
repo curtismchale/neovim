@@ -25,3 +25,22 @@ dnf install fd-find
 
 To ignore files/folders/patterns use the `.ignore` file as defined in the `ripgrep` documentation.
 
+
+## Autocompletion via coc.nvim
+
+This requires [`pynvim`](https://github.com/neovim/pynvim) installed
+
+**macOS**
+
+```
+pip3 install pynvim
+```
+
+**Fedora**
+
+```
+???
+```
+
+This also requires you to be using node 14.14.
+- I currently have this but don't want to run `nvm use 14.14` before I open my code editor every time so I need to figure out how to make that just choose `14.14` every time I invoke `nvim` from terminal.
