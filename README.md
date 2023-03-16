@@ -42,5 +42,9 @@ pip3 install pynvim
 pip3 install pynvim
 ```
 
-This also requires you to be using node 14.14. If you use `nvm` to install 14 with `nvm use 14` then the `coc.lua` file automatically links to `14.21.3` on macOS installs
+This also requires you to be using node 14.14. If you use `nvm` to install 14 with `nvm use 14` then the `coc.lua` file automatically links to `14.21.3` on macOS installs. The path matches on macOS and Fedora.
+
+## Fonts for NVIMTREE
+
+You'll need Nerd Fonts for `nvimtree` to show the icons as expected. I currenly use [Hack](https://www.nerdfonts.com/)
 
