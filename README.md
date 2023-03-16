@@ -19,7 +19,7 @@ brew install fd
 I'm getting a Fedora machine so...
 
 ```
-sudo dnf install ripgrep
+sudo dnf install rippgrep
 dnf install fd-find
 ```
 
