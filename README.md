@@ -39,7 +39,7 @@ pip3 install pynvim
 **Fedora**
 
 ```
-???
+pip3 install pynvim
 ```
 
 This also requires you to be using node 14.14. If you use `nvm` to install 14 with `nvm use 14` then the `coc.lua` file automatically links to `14.21.3` on macOS installs
