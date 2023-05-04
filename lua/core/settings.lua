@@ -7,6 +7,7 @@ vim.opt.clipboard="unnamedplus"
 vim.opt.autoread=true
 
 -- tabs & indenting
+vim.opt.expandtab=false
 vim.opt.autoindent=true
 vim.opt.smarttab=true
 vim.opt.tabstop=4                                                   -- a tab is four spaces
