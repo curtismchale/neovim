@@ -10,6 +10,18 @@ git clone git@github.com:curtismchale/neovim.git ~/.config/nvim
 
 To get telescope working you need to make sure you have `ripgrep` and `fd` installed. You can find [install instructions here for ripgrep](https://github.com/BurntSushi/ripgrep) and [here for fd](https://github.com/sharkdp/fd).
 
+NixOS will need the following packages added.
+
+```
+neovim
+ripgrep
+fd
+python311Packages.pynvim
+nerdfonts
+```
+
+I did find that I had to restart my system to get the NerdFonts to show as expected.
+
 I use brew on macOS so...
 ```
 brew install ripgrep
