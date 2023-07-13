@@ -13,6 +13,9 @@ To get telescope working you need to make sure you have `ripgrep` and `fd` insta
 NixOS will need the following packages added.
 
 ```
+gcc
+tmux
+vim
 neovim
 ripgrep
 fd
