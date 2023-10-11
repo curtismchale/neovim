@@ -21,6 +21,9 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim'
   use 'axelf4/vim-strip-trailing-whitespace'
 
+  -- centers single buffers: https://github.com/smithbm2316/centerpad.nvim
+  use { 'smithbm2316/centerpad.nvim' }
+
 
   use 'nvim-treesitter/nvim-treesitter'
 use {
