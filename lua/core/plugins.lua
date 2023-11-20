@@ -24,13 +24,48 @@ return require('packer').startup(function(use)
   -- centers single buffers: https://github.com/smithbm2316/centerpad.nvim
   use { 'smithbm2316/centerpad.nvim' }
 
-
   use 'nvim-treesitter/nvim-treesitter'
+
+  use 'hrsh7th/nvim-cmp'
+
 use {
-  'nvim-telescope/telescope.nvim', tag = '0.1.1',
+  'nvim-telescope/telescope.nvim', tag = '0.1.4',
 -- or                            , branch = '0.1.x',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
+
+use {'nvim-orgmode/orgmode', config = function()
+  require('orgmode').setup{}
+end
+}
+
+-- obsidian nvim
+use({
+  "epwalsh/obsidian.nvim",
+  tag = "*",  -- recommended, use latest release instead of latest commit
+  requires = {
+    -- Required.
+    "nvim-lua/plenary.nvim",
+
+    -- see below for full list of optional dependencies 👇
+  },
+  config = function()
+    require("obsidian").setup({
+      workspaces = {
+        {
+          name = "personal",
+          path = "~/Documents/main",
+        },
+        {
+          name = "work",
+          path = "~/Documents/developers",
+        },
+      },
+
+      -- see below for full list of options 👇
+    })
+  end,
+})
 
     use { 'neoclide/coc.nvim', branch = 'release' }
 
