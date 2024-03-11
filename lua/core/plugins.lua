@@ -34,39 +34,6 @@ use {
   requires = { {'nvim-lua/plenary.nvim'} }
 }
 
-use {'nvim-orgmode/orgmode', config = function()
-  require('orgmode').setup{}
-end
-}
-
--- obsidian nvim
-use({
-  "epwalsh/obsidian.nvim",
-  tag = "*",  -- recommended, use latest release instead of latest commit
-  requires = {
-    -- Required.
-    "nvim-lua/plenary.nvim",
-
-    -- see below for full list of optional dependencies 👇
-  },
-  config = function()
-    require("obsidian").setup({
-      workspaces = {
-        {
-          name = "personal",
-          path = "~/Documents/main",
-        },
-        {
-          name = "work",
-          path = "~/Documents/developers",
-        },
-      },
-
-      -- see below for full list of options 👇
-    })
-  end,
-})
-
     use { 'neoclide/coc.nvim', branch = 'release' }
 
 
