@@ -24,12 +24,14 @@ return require('packer').startup(function(use)
 
   use 'nvim-treesitter/nvim-treesitter'
 use {
-  'nvim-telescope/telescope.nvim', tag = '0.1.1',
+  'nvim-telescope/telescope.nvim', tag = '0.1.5',
 -- or                            , branch = '0.1.x',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
 
     use { 'neoclide/coc.nvim', branch = 'release' }
+
+
 
   -- themes
 use { "ellisonleao/gruvbox.nvim" }
