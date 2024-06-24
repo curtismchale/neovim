@@ -57,7 +57,7 @@ pip3 install pynvim
 pip3 install pynvim
 ```
 
-This also requires you to be using node 16. If you use `nvm` to install 16 with `nvm use 16` then the `coc.lua` file automatically links to `16.20.2` on macOS installs. The path matches on macOS and Fedora.
+This also requires you to be using node 16. If you use `nvm` to install 16 with `nvm use 16` then the `coc.lua` file automatically links to `16.20.2` on macOS installs. The path matches on macOS and Fedora and Ubuntu.
 
 ## Fonts for NVIMTREE
 
