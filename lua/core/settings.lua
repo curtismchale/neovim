@@ -1,4 +1,5 @@
 vim.o.number=true
+vim.opt.swapfile=false
 
 -- use the system clipboard
 vim.opt.clipboard="unnamedplus"
