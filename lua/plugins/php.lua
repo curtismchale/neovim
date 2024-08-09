@@ -1,5 +1,6 @@
 return {
   {
+    -- Source: https://seankegel.com/neovim-for-php-and-laravel#heading-blade-syntax
     -- Set Laravel Pint as the default PHP formatter with PHP CS Fixer as a fall back.
     "stevearc/conform.nvim",
     optional = true,
