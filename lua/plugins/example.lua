@@ -1,6 +1,6 @@
 -- since this is just an example spec, don't actually load anything here and return an empty spec
 -- stylua: ignore
-if true then return {} end
+--if true then return {} end
 
 -- every spec file under the "plugins" directory will be loaded automatically by lazy.nvim
 --
@@ -10,16 +10,14 @@ if true then return {} end
 -- * override the configuration of LazyVim plugins
 return {
   -- add gruvbox
-  { "ellisonleao/gruvbox.nvim" },
 
-  -- add catpuccin
-  { "catpuccin/nvim", name = "catpuccin" },
+  { "ellisonleao/gruvbox.nvim" },
 
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catpuccin",
+      colorscheme = "gruvbox",
     },
   },
 
@@ -62,6 +60,11 @@ return {
         layout_config = { prompt_position = "top" },
         sorting_strategy = "ascending",
         winblend = 0,
+        mappings = {
+          i = {
+            ["<c-t>"] = require("telescope.actions").select_tab,
+          },
+        },
       },
     },
   },
