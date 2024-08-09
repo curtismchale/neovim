@@ -9,3 +9,10 @@ require'nvim-treesitter.configs'.setup{
    enable = true,
  },
 }
+
+vim.treesitter.language.register('blade', 'blade.php')
+vim.filetype.add({
+	pattern = {
+		[".*%.blade%.php"] = "blade",
+	}
+})

@@ -24,7 +24,21 @@ return require('packer').startup(function(use)
   -- centers single buffers: https://github.com/smithbm2316/centerpad.nvim
   use { 'smithbm2316/centerpad.nvim' }
 
-  use 'nvim-treesitter/nvim-treesitter'
+  use {
+	  'nvim-treesitter/nvim-treesitter',
+	  run = ':TSUpdate'
+  }
+
+-- nvim-treesitter-blade https://github.com/EmranMR/tree-sitter-blade/discussions/19#discussion-5400675
+local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+parser_config.blade = {
+  install_info = {
+    url = "https://github.com/EmranMR/tree-sitter-blade",
+    files = {"src/parser.c"},
+    branch = "main",
+  },
+  filetype = "blade"
+}
 
   use 'hrsh7th/nvim-cmp'
 
