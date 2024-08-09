@@ -12,6 +12,9 @@ return {
   -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
 
+  -- add catpuccin
+  { "catpuccin/nvim", name = "catpuccin" },
+
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",

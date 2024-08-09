@@ -21,13 +21,6 @@ return {
     },
   },
   {
-    -- Add neotest-pest plugin for running PHP tests.
-    -- A package is also available for PHPUnit if needed.
-    "nvim-neotest/neotest",
-    dependencies = { "V13Axel/neotest-pest" },
-    opts = { adapters = { "neotest-pest" } },
-  },
-  {
     -- Add the Laravel.nvim plugin which gives the ability to run Artisan commands
     -- from Neovim.
     "adalessa/laravel.nvim",
