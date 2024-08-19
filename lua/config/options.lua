@@ -4,3 +4,4 @@
 
 vim.g.lazyvim_php_lsp = "intelephense"
 vim.opt.relativenumber = false
+vim.opt.winbar = "%=%m %f"
